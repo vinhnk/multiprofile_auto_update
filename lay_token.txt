@@ -1,0 +1,16 @@
+Các bước nhanh
+Truy cập: https://github.com/settings/tokens/new
+Đặt tên token (ví dụ: "Electron Auto Update")
+Chọn Expiration (khuyến nghị: 90 days hoặc 1 year)
+Chọn quyền: repo (checkbox đầu tiên trong phần "repo")
+Click "Generate token"
+Sao chép token (bắt đầu bằng ghp_)
+Tạo file .env trong thư mục electron-app:
+
+GH_TOKEN=ghp_paste_your_token_here
+
+Lưu ý
+Token chỉ hiển thị một lần, hãy sao chép ngay
+File .env đã được ignore trong .gitignore, an toàn
+Token bắt đầu bằng ghp_
+Sau khi tạo token và lưu vào .env, bạn có thể chạy npm run publish để upload lên GitHub Releases.
